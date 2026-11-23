@@ -1,0 +1,15 @@
+{
+  "name": "pancakes",
+  "description": "The Pancakes plugin: build and run small-business websites from Claude.",
+  "owner": {
+    "name": "Pancakes",
+    "url": "https://pancakes.design"
+  },
+  "plugins": [
+    {
+      "name": "pancakes",
+      "source": "./",
+      "description": "Build, edit, preview, schedule and publish small-business websites on Pancakes."
+    }
+  ]
+}

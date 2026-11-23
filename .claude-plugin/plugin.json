@@ -1,0 +1,15 @@
+{
+  "name": "pancakes",
+  "displayName": "Pancakes",
+  "version": "1.1.0",
+  "description": "Build, edit, preview, schedule and publish small-business websites on Pancakes from a conversation. Every edit is previewed before it goes live, and seasonal changes can start and end on their own.",
+  "author": {
+    "name": "Pancakes",
+    "url": "https://pancakes.design"
+  },
+  "homepage": "https://pancakes.design/agents",
+  "repository": "https://github.com/event-atlas/pancakes-plugin",
+  "license": "MIT",
+  "keywords": ["website", "site builder", "small business", "hosting", "mcp"],
+  "privacyPolicyUrl": "https://pancakes.design/privacy"
+}

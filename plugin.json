@@ -1,0 +1,34 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "pancakes",
+  "version": "1.1.0",
+  "description": "Build, edit, preview, schedule and publish small-business websites on Pancakes from a conversation. Every edit is previewed before it goes live, and seasonal changes can start and end on their own.",
+  "author": { "name": "Pancakes", "url": "https://pancakes.design" },
+  "homepage": "https://pancakes.design/agents",
+  "license": "MIT",
+  "keywords": ["website", "site builder", "small business", "hosting", "mcp"],
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/build-business-website/SKILL.md",
+      "interface": {
+        "displayName": "Pancakes",
+        "shortDescription": "Build and update your business website",
+        "longDescription": "Create a website for a small business from a short description, change its pages with a before and after preview of every edit, schedule seasonal changes that start and end on their own, and publish when you are ready.",
+        "developerName": "Pancakes",
+        "category": "Productivity",
+        "capabilities": ["Interactive", "Write"],
+        "websiteURL": "https://pancakes.design",
+        "privacyPolicyURL": "https://pancakes.design/privacy",
+        "termsOfServiceURL": "https://pancakes.design/terms",
+        "defaultPrompt": [
+          "Make a website for my bakery",
+          "Post our holiday hours for next week",
+          "Check my site before I publish it"
+        ],
+        "brandColor": "#c2410c",
+        "logo": "./assets/logo.png",
+        "composerIcon": "./assets/logo.png"
+      }
+    }
+  }
+}
