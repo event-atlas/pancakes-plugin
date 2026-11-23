@@ -32,11 +32,21 @@ sign-in. Suggest two or three themes whose `suits` match, with their
 ## 3. Create the site
 
 Call `create_site` with `name`, a `brief` of two or three sentences, and the
-chosen `themeId` and `colorwayId`. The app signs the person in to Pancakes the
-first time; someone new can create an account in that window. Building and
-previewing need no plan. The new site is not public. Keep its `id`
-and pass it as `site` to every later tool, and give the person its `editUrl`
-so they can look at it in Pancakes at any time.
+chosen `themeId` and `colorwayId`. Building and previewing need no plan. The
+new site is not public. Keep its `id` and pass it as `site` to every later
+tool.
+
+- If the person is signed in to Pancakes, the site is made in their
+  workspace. Give them its `editUrl` so they can look at it in Pancakes at
+  any time.
+- If nobody is signed in, the site is a draft that no account owns yet. You
+  can still read it, write its pages and show previews. Give the person its
+  `claimUrl` and tell them the draft is deleted after a week unless they
+  open that link and sign in or create a free account. Publishing, adding
+  photos and scheduling ask them to sign in; keep using the same `site`
+  value afterwards.
+- If the person says they already have a Pancakes account, call `list_sites`
+  first, which asks them to sign in, so the site is made in their workspace.
 
 ## 4. Write the pages
 
